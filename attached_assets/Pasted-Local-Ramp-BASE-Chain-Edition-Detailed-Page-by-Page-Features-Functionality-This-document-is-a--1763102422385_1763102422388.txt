@@ -1,0 +1,249 @@
+Local Ramp – BASE Chain Edition: Detailed Page-by-Page Features & Functionality
+This document is a revamped breakdown of your Local Ramp P2P platform, fully optimized for deployment on the BASE Chain ecosystem. All features and interface details reflect BASE Chain’s user expectations, ecosystem standards, and branding requirements. Theme and compliance details are included; all features are chain/brand-consistent.
+
+BASE-Specific Guidelines & Theme
+Theme Colors:
+
+Light Mode: BASE blue (#0052FF), white (#FFFFFF), pale blue highlights, deep slate text
+
+Dark Mode: BASE blue (#0052FF), near black (#0A0B14), medium slate text, white accents
+
+BASE Branding:
+
+Use official BASE Chain icons and wallet connection logos
+
+Micro-interactions and highlights use BASE blue
+
+All “Powered by BASE Chain” footers and legal texts
+
+Chain Integration:
+
+All wallet connections and on-chain signatures are BASE chain-prefixed
+
+Offer IDs, transaction hashes link to BASE chain explorers
+
+Fee logic (future): all platform deductions/fees occur in USDC (BASE native bridged tokens)
+
+Ecosystem UX:
+
+Display L2 confirmation banners, “Fast, Secure – BASE Chain” badges in wallet modals
+
+All public-offer and deal status displays include BASE chain references
+
+No Escrow:
+
+IRL/public-only, no on-chain escrows/funds held by platform
+
+Page-by-Page (With BASE Chain Adaptations)
+1. Connect Wallet / Login
+Purpose:
+Let users connect using Web3 wallets on BASE (MetaMask, Rainbow, Coinbase Wallet, WalletConnect v2—BASE support).
+
+Features:
+
+Dynamic “Connect Wallet” with BASE badge/icons
+
+On connect, prompt for BASE signature (e.g., "Sign to verify for BASE Chain")
+
+Error messages for non-BASE wallets, unsupported networks (force BASE mainnet)
+
+Educational “Why BASE Chain?” panel
+
+All connection states match BASE chain UX framework
+
+Confirmation if connected account is not BASE—show switch-to-BASE modal
+
+Theme: BASE blue/white (Light), BASE blue/black (Dark)
+
+2. Onboarding / Profile Setup
+Purpose:
+Gather essential info and tie it to user’s BASE wallet address.
+
+Features:
+
+All fields from earlier (see prior doc)
+
+Avatar generator offers “BASE Chain avatars” as default option
+
+Wallet address auto-populates, can’t be edited—always BASE mainnet
+
+BASE-profile badge appears for users with on-chain actions
+
+TOS/Consent has explicit BASE Chain compliance agreement
+
+3. Profile / Dashboard
+Purpose:
+Overview of user’s trading presence, on BASE Chain.
+
+Features:
+
+Public and private info from earlier
+
+On-chain badge or “On BASE Chain since [date]” visible
+
+Wallet links to BASE scan/explorer
+
+Offers/deal stats link to on-chain events (transaction hash preview if available)
+
+BASE chain address-shield for privacy (only first/last 3 chars unless user opts in)
+
+Mobile-optimized components
+
+BASE-powered trust score indicator
+
+4. Create Offer
+Purpose:
+Build/submit Buy/Sell offers on BASE, in USDC only.
+
+Features:
+
+“Buy”/“Sell” toggle in BASE blue/purple
+
+Currency: Only USDC (option to display fiat equivalence, but all settlement in BASE-native tokens)
+
+Offer preview shows on-chain settlement banner: “Settle off-chain, powered by BASE”
+
+All limits/formatting match BASE Chain precision (handle 6 decimals if needed)
+
+Min/max controls in-line with BASE economic minimums
+
+On submit: BASE chain offer ID generated, BASE scan link included
+
+Safety warning: “No escrow, no on-chain settlement – meet in public” prominent, in BASE info colors
+
+5. Offers Browse / Map
+Purpose:
+Show active offers; emphasize BASE Chain provenance.
+
+Features:
+
+Map/list with BASE-branded pins
+
+Each offer card includes BASE explorer transaction shortcut, BASE chain badge
+
+Filtering/sorting includes "On-Chain Verified" toggle for BASE action-check
+
+When searching: "You are searching offers on BASE Chain – all deals are IRL, no funds flow through platform."
+
+Fee gating logic (per search, if active) only deducts in USDC on BASE
+
+6. Offer Detail
+Purpose:
+Full detail for an IRL deal, BASE chain contextual info.
+
+Features:
+
+Display all offer fields
+
+BASE explorer hash for offer creation/updates, if tracked
+
+“Initiate Deal” CTA always includes "On-BASE" badge
+
+Report/flag modal: attach files/screenshots, all reports logged with wallet, time, BASE address
+
+Safety banner matches BASE compliance color and icon
+
+No online settlement flows at all
+
+7. Messaging / Chat (on hold/UI only)
+Purpose:
+UI placeholder for upcoming BASE-compliant messaging.
+
+Features:
+
+Chat button with BASE blue (inactive state, tooltip “Coming soon on BASE”)
+
+UI ready for Socket.io/Firebase (but not yet active)
+
+8. Deal / Transaction History
+Purpose:
+View all completed/active/cancelled deals, annotated with on-chain BASE actions.
+
+Features:
+
+Table/cards for each deal
+
+On-chain settlement badge if any BASE tx present (bonus for future on-chain interactions)
+
+Wallet addresses link to BASE scan
+
+Export to CSV/JSON includes BASE explorer links
+
+All date/timestamps in UTC + user local
+
+9. Settings
+Purpose:
+User controls for privacy, BASE chain integrations, and account management.
+
+Features:
+
+All original fields
+
+Option to download BASE chain activity as CSV
+
+Toggle show/hide BASE chain address on profile/public offers
+
+Set notification preferences for BASE chain actions/events/alerts
+
+Advanced: Stake BASE to get "On-Chain Trusted" badge (future)
+
+Danger zone: Clear account data, disconnect wallet (forced BASE chain disconnect for compliance)
+
+10. Help / FAQ / Safety
+Purpose:
+Educational, BASE Chain guidance for safe, compliant use.
+
+Features:
+
+Dedicated section: “What does it mean to use BASE Chain?”
+
+“How to verify a BASE offer on chain?” step-by-step
+
+Updated safety checklist: "No wallet-to-wallet BASE transfers via platform – meet in public only!"
+
+Platform warnings and BASE compliance statements on all FAQ pages
+
+BASE logo/footer/branding everywhere
+
+11. Admin Dashboard (Admins only)
+Purpose:
+Advanced admin controls; additional BASE chain oversight.
+
+Features:
+
+KPI cards for user growth, offers, deal volume, all show BASE chain volume when possible
+
+Users management: search, suspend/ban (wallet address), mark as “Verified BASE user” (on-chain/attestation)
+
+Offer management: filter and display BASE transaction hash for flagged offers
+
+Dispute center: attach on-chain evidence if submitted
+
+Analytics: chart IRL deal volume, search fee volume in USDC, users over time, on-chain events over time
+
+Verification: approve/reject KYC, log with BASE address
+
+Platform settings: toggle/adjust search fee (USDC) for all/individuals
+
+Full audit logs for every admin action—show wallet/BASE role; owner wallet is super-admin
+
+BASE chain compliance updates when rules/policies change
+
+All UI in admin theme matches BASE chain spec (dark blue accents)
+
+Universal/Global Features (All Pages)
+Header/nav with BASE blue-accented dashboard and links, profile, theme switch, wallet badge, powered by BASE Chain
+
+Theme provider: instantly switch from BASE blue/white to BASE blue/black
+
+Responsive design (test on all device sizes, BASE expects mobile-first)
+
+Accessible: All actions ARIA-labeled, keyboard navigation, large tap targets per BASE mobile guidelines
+
+Toasts/snackbars for all actions—BASE branding for success/failure
+
+All error/success/fraud warnings follow BASE chain’s regulatory/legal disclosure requirements
+
+No escrow or online wallet-to-wallet flows—platform is strictly for IRL trading, enforced at UI and server/API layers
+
+All feature gates (search fee, chat, escrow) are ready for BASE-specific deployment/config
