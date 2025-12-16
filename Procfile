@@ -1,2 +1,2 @@
-release: npm run build
+release: npm ci --include=dev && npm run build
 web: npm start
