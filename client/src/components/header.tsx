@@ -6,7 +6,6 @@ import { useWallet } from "@/lib/contexts";
 import { Menu, X, Plus } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoSvg from "@/assets/Local-Ramp.svg";
 
 export function Header() {
   const { isConnected } = useWallet();
@@ -30,9 +29,12 @@ export function Header() {
     const controlHeader = () => {
       const currentScrollY = window.scrollY;
       
+      // Show header when scrolling up or at the top
       if (currentScrollY < lastScrollY || currentScrollY < 10) {
         setIsVisible(true);
-      } else if (currentScrollY > lastScrollY && currentScrollY > 80) {
+      } 
+      // Hide header when scrolling down (after 10px threshold)
+      else if (currentScrollY > lastScrollY && currentScrollY > 80) {
         setIsVisible(false);
       }
       
@@ -57,7 +59,10 @@ export function Header() {
         <div className="flex items-center gap-6">
           <Link href={isConnected ? "/dashboard" : "/"}>
             <a className="flex items-center gap-2 font-bold text-xl hover-elevate active-elevate-2 px-2 py-1 rounded-md" data-testid="link-home">
-              <img src={logoSvg} alt="Local Ramp Logo" width={40} height={40} />
+              {/* <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold">
+                LR
+              </div> */}
+              <img src="client\public\Local-Ramp.svg" width={40} />
               <span className="hidden sm:inline">LOCAL RAMP</span>
             </a>
           </Link>
