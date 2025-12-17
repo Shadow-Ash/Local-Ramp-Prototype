@@ -6,6 +6,7 @@ import { useWallet } from "@/lib/contexts";
 import { Menu, X, Plus } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { LocalRamp } from "../../public/Local-Ramp.svg"
 
 export function Header() {
   const { isConnected } = useWallet();
@@ -62,7 +63,7 @@ export function Header() {
               {/* <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold">
                 LR
               </div> */}
-              <img src="../../public/Local-Ramp.svg" width={40} />
+              <img src={LocalRamp} alt="Local Ramp Logo" width={40} height={40} />
               <span className="hidden sm:inline">LOCAL RAMP</span>
             </a>
           </Link>
