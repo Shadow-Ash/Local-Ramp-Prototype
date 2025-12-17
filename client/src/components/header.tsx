@@ -62,7 +62,7 @@ export function Header() {
               {/* <div className="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold">
                 LR
               </div> */}
-              <img src="client\public\Local-Ramp.svg" width={40} />
+              <img src="client\public\Local-Ramp.png" width={40} />
               <span className="hidden sm:inline">LOCAL RAMP</span>
             </a>
           </Link>
